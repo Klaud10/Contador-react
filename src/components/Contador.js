@@ -1,7 +1,6 @@
 import React, {useState, Fragment} from 'react';
 
 const Contador = () => {
-    
     const [numero, setNumero] = useState(0);
     
     const aumentar = () => {
