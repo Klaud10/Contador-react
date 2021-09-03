@@ -1,4 +1,6 @@
 import React, {useState, Fragment} from 'react';
+import Button from '@material-ui/core/Button'
+
 
 const Contador = () => {
     const [numero, setNumero] = useState(0);
@@ -15,9 +17,11 @@ const Contador = () => {
 
     return ( 
         <Fragment>
-            <h3>Contador BJ={numero}</h3>
-            <button onClick={aumentar}>Sumar</button>
-            <button onClick={restar}>Restar</button>
+            <div className="container mt-5">
+                <h1>Contador BJ={numero}</h1>
+                <Button variant="outlined" color="primary" onClick={aumentar}>Sumar</Button>
+                <Button variant="outlined" color="secondary" onClick={restar}>Restar</Button>
+            </div>
         </Fragment>
     );
 }
